@@ -32,6 +32,7 @@ declare module "zangodb" {
 
     export class Db extends NodeJS.EventEmitter {
         constructor(name: string, version?: number, config?: string[]|Object);
+        constructor(name: string, config?: string[]|Object);
 
         name: string;
         version: number;
